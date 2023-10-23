@@ -1,0 +1,15 @@
+services:
+  ffmpeg-node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    volumes:
+      - ./src:/home/node/app/src
+      - ./nodemon.json:/home/node/app/nodemon.json
+    container_name: ffmpeg-node
+    expose:
+      - '8000'
+    ports:
+      - '8000:8000'
+    command: npm run dev

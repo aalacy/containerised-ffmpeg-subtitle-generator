@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+      "module": "node16",
+      "declaration": false,
+      "noImplicitAny": false,
+      "skipLibCheck": true,
+      "removeComments": true,
+      "noLib": false,
+      "allowSyntheticDefaultImports": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "target": "ES2017",
+      "sourceMap": true,
+      "outDir": "build",
+      "incremental": true,
+      "strictNullChecks": true,
+      "moduleResolution": "node"
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+      "node_modules"
+  ]
+}
